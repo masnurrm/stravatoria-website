@@ -1,0 +1,346 @@
+/* SEMUA DEVICE */
+/* Navbar Plokotho */
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: 'Viga';
+    font-size: 30px;
+}
+
+/* Tombol */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* Jumbotron Plokotho */
+.jumbotron {
+    background-image: url(https://1.bp.blogspot.com/-crKqBQevQTI/XSNCbSp3l7I/AAAAAAAABHY/3ZSZIlDkmQY5M7zyff-kcfNHy9b-QBUoQCLcBGAs/s1600/Jumbotron.png);
+    background-position-x: 0%;
+    height: 540px;
+    position: relative;
+    margin-bottom: 0;    
+}
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4 {
+    font-family: 'Viga';
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    margin-top: 166px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,7);
+}
+.jumbotron .lead {
+    font-family: 'PT Sans';
+    font-size: 17,5px;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,7);
+}
+
+.img-fluid {
+    max-height: auto;
+    width: 120%;
+    max-width: 740px;
+    
+}
+
+/* Event */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wadah {
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    font-size: 24px;
+}
+
+/* Pembeda */
+.gradien {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0,0,0,1) 45%,rgba(0,0,0,0));    
+    top: 0;
+    right: 0;
+}
+
+.gradienKanan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background-image: linear-gradient(to right, rgba(0,0,0,1) 47%,rgba(0,0,0,0));
+    text-align: right;
+}
+
+.btn{
+    margin-top: 1rem;
+    font-family: 'PT Sans';
+}
+.gradien .btn {
+    margin-right: 10px;
+}
+.gradienKanan .btn {
+    margin-left: 10px;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.gambar {
+    height: 500px;
+    background-size: fill;
+    background-repeat: no-repeat;    
+}
+
+
+h2 {
+	font-family: 'Viga';
+    color: white;
+    font-size: 2em;
+  
+}
+
+p {
+	font-family: 'PT Sans';
+    color: white;
+    font-size: 1em;
+    
+}
+
+/* Footer */
+.katakepsek {
+    margin-top: 70px;
+    align-content: center;
+    align-items: center;
+}
+.katakepsek h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 22px;
+}
+.jareskepsek {
+    align-content: center !important;
+    align-items: center !important;
+}
+.jarekepsek figure img {
+    width: 90px;
+    margin-top: 20px;
+    align-content: center !important;
+    align-items: center !important;
+}
+.jarekepsek figure h4 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center !important;
+}
+.jarekepsek figure p {
+    color: gray;
+    font-size: 16px;
+    margin-top: -9px !important;
+    text-align:center;
+}
+.footer {
+    margin-top: 40px;
+}
+.footer p  {
+    color: grey !important;
+    font-family: 'viga';
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    /* Navbar */
+    .nav-item .tombol {
+        margin-top: 5px;
+    }
+
+    /* Event */
+    .wadah{
+        font-size: 16px;
+        text-align: center;
+    }
+    .btn {
+        margin-top: -0.5rem;
+    }
+    .gradien {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(0,0,0,1) 30%,rgba(0,0,0,0));    
+        top: 0;
+        right: 0;
+    }
+    
+    .gradienKanan{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(0,0,0,1) 30%,rgba(0,0,0,0));
+        text-align: center;    
+    }
+        
+    .container-fluid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .gambar {
+        background-size: fill;
+        background-repeat: no-repeat;    
+    }
+    
+    h2 {
+        margin-top: 250px;
+        font-family: 'Viga';
+        color: white;
+        font-size: 2em;
+        text-align: center;    
+    }
+    
+    p {
+        font-family: 'PT Sans';
+        color: white;
+        font-size: 1em;
+        text-align: center;    
+    }
+}
+    
+
+/* KHUSUS DESKTOP */
+@media (min-width: 992px) { 
+    /* Navbar */
+    .navbar-brand,.nav-link {
+        color: #ffffff !important;
+        text-shadow: 1px 3px 6px rgba(0, 0, 0, 0,7);
+    }
+    .nav-link {
+        margin-top: 18px;
+        font-family: 'Viga';
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover:after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0800FF;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .tombol{
+        font-family: 'Viga';
+    }
+    /* Jumbotron */
+    .jumbotron{
+        background-size: cover;
+        height: 640px;   
+        margin-top: -75px;
+    }
+    .jumbotron .display-4 {
+        font-size: 120px;
+    }
+    .jumbotron .lead {
+        font-size: 35px;
+    }
+    .panah-sangar img {
+        width: 60px;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+
+    /* Event */
+    .gradien {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to left, rgba(0,0,0,1) 45%,rgba(0,0,0,0));    
+        top: 0;
+        right: 0;
+    }
+    
+    .gradienKanan{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, rgba(0,0,0,1) 47%,rgba(0,0,0,0));
+        text-align: right;
+    }
+    
+    .btn{
+        margin-top: 1rem;
+    }
+    
+    .container-fluid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .gambar {
+        height: 500px;
+        background-size: fill;
+        background-repeat: no-repeat;    
+    }
+    
+    h2 {
+        font-family: 'Viga';
+        color: white;
+        font-size: 2em;
+  
+    }
+    
+    p {
+        font-family: 'PT Sans';
+        color: white;
+        font-size: 1em;
+      
+    }
+
+    /* Footer */
+    .katakepsek h5 {
+        font-size: 32px;
+    }
+}
